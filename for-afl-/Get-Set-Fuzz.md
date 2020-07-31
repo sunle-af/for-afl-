@@ -57,12 +57,11 @@ afl-fuzz -i in -o out ./fuzzgoat @@
 ## Fuzzing and analysing the crashes:
 ![4](https://user-images.githubusercontent.com/44070827/89029806-d273c880-d34c-11ea-96b7-f694b3d5aa41.png)
 <span style="color: green">3 cycles,total path,27 unique crashes were found </span>
-
-####Data under out(output) directory:
+#### Data under out(output) directory:
  
 ![image5](https://user-images.githubusercontent.com/44070827/89030480-2f23b300-d34e-11ea-924f-184bd86b371e.png)
 
-####Data under crashes:
+#### Data under crashes:
 ![6](https://user-images.githubusercontent.com/44070827/89030514-4367b000-d34e-11ea-837c-b9e3e6c5284c.png)
 
 
