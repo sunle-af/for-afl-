@@ -52,17 +52,17 @@ afl-fuzz -i in -o out ./fuzzgoat @@
 ![3](https://user-images.githubusercontent.com/44070827/89029803-d1429b80-d34c-11ea-9e76-2cc439898d69.png)
 
 
-{The basic tests and checks before fuzzer start.}
+######The basic tests and checks before fuzzer start.
 
 
 ## Fuzzing and analysing the crashes:
 ![4](https://user-images.githubusercontent.com/44070827/89029806-d273c880-d34c-11ea-96b7-f694b3d5aa41.png)
-{3 cycles,total path,27 unique crashes were found}
-Data under out{output} directory:
+######3 cycles,total path,27 unique crashes were found
+###Data under out(output) directory:
  
 ![image5](https://user-images.githubusercontent.com/44070827/89030480-2f23b300-d34e-11ea-924f-184bd86b371e.png)
 
-Data under crashes:
+###Data under crashes:
 ![6](https://user-images.githubusercontent.com/44070827/89030514-4367b000-d34e-11ea-837c-b9e3e6c5284c.png)
 
 
@@ -94,11 +94,10 @@ pos:37,val:-5
 gdb ./fuzzgoat
 ````
 ![10](https://user-images.githubusercontent.com/44070827/89030738-bb35da80-d34e-11ea-9fd9-933a75d08276.png)
-
-![11](https://user-images.githubusercontent.com/44070827/89030741-bcff9e00-d34e-11ea-8b9e-0d26280fbf14.png)
 ````
 (gdb) run out/crashes/id:000025,sig:11,src:000116,time:166949,op:arith8,pos:37,val:5
 ````
+
 
 ![12](https://user-images.githubusercontent.com/44070827/89030742-bcff9e00-d34e-11ea-9a44-0b243b75db4a.png)
 
