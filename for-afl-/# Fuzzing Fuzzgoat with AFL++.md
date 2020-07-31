@@ -17,7 +17,7 @@ sudo make install
    
 ## What it Fuzzgoat?
 
-A vulnerable C program that is used for testing fuzzer’s.
+A vulnerable C program that is used for testing fuzzers.
 
 ## Download the source of fuzzgoat with:
 ````
@@ -50,19 +50,19 @@ afl-fuzz -i in -o out ./fuzzgoat @@
 ● ./fuzzgoat -Binary to fuzz
 ● @@ -Is used for marking location in the targets command line where the input file should be in placed
 ![3](https://user-images.githubusercontent.com/44070827/89029803-d1429b80-d34c-11ea-9e76-2cc439898d69.png)
+<span style="color: green">The basic tests and checks before fuzzer start. </span>
 
-
-######The basic tests and checks before fuzzer start.
 
 
 ## Fuzzing and analysing the crashes:
 ![4](https://user-images.githubusercontent.com/44070827/89029806-d273c880-d34c-11ea-96b7-f694b3d5aa41.png)
-######3 cycles,total path,27 unique crashes were found
-###Data under out(output) directory:
+<span style="color: green">3 cycles,total path,27 unique crashes were found </span>
+
+####Data under out(output) directory:
  
 ![image5](https://user-images.githubusercontent.com/44070827/89030480-2f23b300-d34e-11ea-924f-184bd86b371e.png)
 
-###Data under crashes:
+####Data under crashes:
 ![6](https://user-images.githubusercontent.com/44070827/89030514-4367b000-d34e-11ea-837c-b9e3e6c5284c.png)
 
 
